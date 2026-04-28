@@ -552,7 +552,8 @@ static int push_multiple(struct string_list *list,
 			 const char **refspecs,
 			 int refspec_nr)
 {
-	int i, result = 0;
+	int result = 0;
+	size_t i;
 	struct strvec argv = STRVEC_INIT;
 
 	strvec_push(&argv, "push");
